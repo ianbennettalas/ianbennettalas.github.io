@@ -91,11 +91,12 @@ main {
 .subtitle {
   font-size: 1.05rem;
   color: #555;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .button {
   display: inline-block;
+  margin: 2rem 0;
   padding: 0.6rem 1.5rem;
   border: 1px solid #222;
   border-radius: 4px;
