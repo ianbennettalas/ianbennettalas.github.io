@@ -6,7 +6,7 @@ description: "A tribute to my parents."
 image: /images/what-im-thankful-for.png
 ---
 
-#### My dad
+# My dad
 
 He embodies discipline, unsurprising since he almost became a priest. He often told me stories of his ambition as a student. How he was always #1 in his classes. How he would aggressively compete with his top classmates. But he can also be stubborn when he thinks he's right. He was supposed to be a lawyer until he got into an argument with a teacher in front of his law school class and stormed out. His classmates tried to talk him into apologizing, but he refused to return to the class because he was convinced he was right. And yet somehow, he never loses his cool when we debate, despite my increasingly impatient tone.
 
@@ -22,7 +22,7 @@ More recently, I learned my dad is terrified of the dentist, though I haven't se
 
 ---
 
-#### My mom
+# My mom
 
 She's the yin to my dad's yang. If my dad is the intellectual, my mom is the emotional. If my dad is impersonal, my mom is uber-personal, always curious, always wanting to be involved. I remember that she wished she had a daughter — in addition, not in place of — and I wish she did too, so that my brother and I could've had a mediator, and so that my mom could've had her "best friend." She used to always say that when she wanted to get something out of me. *Come on. Tell your best friend.* As I got older, I tried to be that for her.
 
