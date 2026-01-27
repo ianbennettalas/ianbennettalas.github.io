@@ -3,8 +3,7 @@ layout: page
 title: Essays
 ---
 <ul class="post-list">
-  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-  {% for post in sorted_posts %}
+  {% for post in site.posts %}
   <li>
     <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>

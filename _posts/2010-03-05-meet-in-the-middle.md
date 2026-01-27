@@ -4,6 +4,7 @@ title: "Meet in the Middle"
 date: 2010-03-05
 description: "A solution for dealing with one-sided relationships."
 image: /images/meet-in-the-middle.png
+pinned: 1
 ---
 
 <p class="has-drop-cap">You meet new people every day, even though you aren't formally introduced. You stand with them in elevators and walk by them on sidewalks. They serve you at restaurants and get in your way at the fountain drinks. They sit with you in traffic and cut you off while talking on their phones. Every day you pass potential friends or partners, maybe someone you could help or someone who could help you. They see you or you see them or sometimes both, but only for a moment and then they're forgotten. Even though you miss these opportunities, you don't care. You don't even notice. You don't mind that they remain strangers because you didn't know them anyway and you'll likely never see them again.</p>

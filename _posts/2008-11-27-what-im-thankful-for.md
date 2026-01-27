@@ -4,6 +4,7 @@ title: "What I'm Thankful for"
 date: 2008-11-27
 description: "A tribute to my parents."
 image: /images/what-im-thankful-for.png
+pinned: 2
 ---
 
 # My dad
