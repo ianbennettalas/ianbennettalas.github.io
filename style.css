@@ -1,3 +1,19 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #222;
+  --text-secondary: #666;
+  --border-color: #e5e5e5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #2d3a2e;
+    --text-color: #e8e4dc;
+    --text-secondary: #b8b4ac;
+    --border-color: #4a5a4b;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,28 +27,28 @@ html {
 body {
   font-family: Georgia, 'Times New Roman', serif;
   line-height: 1.7;
-  color: #222;
-  background: #fff;
+  color: var(--text-color);
+  background: var(--bg-color);
   padding: 2rem 1.5rem 4rem;
   max-width: 640px;
   margin: 0 auto;
 }
 
 a {
-  color: #222;
+  color: var(--text-color);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
 a:hover {
-  color: #666;
+  color: var(--text-secondary);
 }
 
 /* Header / Navigation */
 header {
   margin-bottom: 3rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .site-title {
@@ -67,7 +83,7 @@ main {
   text-align: left;
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--border-color);
 }
 
 .hero {
@@ -90,7 +106,7 @@ main {
 
 .subtitle {
   font-size: 1.05rem;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 0;
 }
 
@@ -98,7 +114,7 @@ main {
   display: inline-block;
   margin: 2rem 0;
   padding: 0.6rem 1.5rem;
-  border: 1px solid #222;
+  border: 1px solid var(--text-color);
   border-radius: 4px;
   text-decoration: none;
   font-size: 0.9rem;
@@ -106,8 +122,8 @@ main {
 }
 
 .button:hover {
-  background-color: #222;
-  color: #fff;
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 /* Post list (homepage) */
@@ -135,12 +151,12 @@ main {
 
 .post-meta {
   font-size: 0.85rem;
-  color: #888;
+  color: var(--text-secondary);
 }
 
 .post-excerpt {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-secondary);
   margin-top: 0.5rem;
 }
 
@@ -189,11 +205,11 @@ article li ul, article li ol {
 }
 
 article blockquote {
-  border-left: 3px solid #ddd;
+  border-left: 3px solid var(--border-color);
   margin: 1.5rem 0;
   padding: 0.5rem 0 0.5rem 1.5rem;
   font-style: italic;
-  color: #444;
+  color: var(--text-secondary);
 }
 
 article blockquote p {
@@ -206,7 +222,7 @@ article blockquote p:last-child {
 
 article hr {
   border: none;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--border-color);
   margin: 2.5rem 0;
 }
 
@@ -234,7 +250,7 @@ article hr {
   display: block;
   margin-top: 3rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--border-color);
   font-size: 0.9rem;
 }
 
@@ -242,9 +258,9 @@ article hr {
 footer {
   margin-top: 4rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--border-color);
   font-size: 0.85rem;
-  color: #888;
+  color: var(--text-secondary);
 }
 
 /* Responsive */
