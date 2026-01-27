@@ -1,0 +1,17 @@
+title: Ian Bennett Alas
+description: Personal website of Ian Bennett Alas
+url: https://ianbennettalas.github.io
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /posts/:title.html
+
+# Analytics
+google_analytics: G-15H4ETT4F4
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

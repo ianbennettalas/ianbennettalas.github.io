@@ -1,88 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Essays - Ian Bennett Alas</title>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-15H4ETT4F4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-15H4ETT4F4');
-  </script>
-</head>
-<body>
-  <script>
-    (function() {
-      const saved = localStorage.getItem('theme');
-      if (saved) {
-        document.documentElement.setAttribute('data-theme', saved);
-      }
-    })();
-  </script>
-  <header>
-    <h1 class="site-title"><a href="/">@ianbennettalas</a></h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/essays.html">Essays</a>
-      <button class="theme-toggle" aria-label="Toggle theme"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
-    </nav>
-  </header>
-
-  <main>
-    <ul class="post-list">
-      <li>
-        <h2 class="post-title"><a href="/posts/in-a-perfect-universe-you-wouldnt-exist.html">In A Perfect Universe, You Wouldn't Exist</a></h2>
-        <p class="post-meta">September 6, 2013</p>
-        <p class="post-excerpt">A reflection on physics, symmetry, and unfathomable luck.</p>
-      </li>
-      <li>
-        <h2 class="post-title"><a href="/posts/is-it-better-to-be-loving-than-to-be-right.html">Is It Better to Be Loving Than to Be Right?</a></h2>
-        <p class="post-meta">January 6, 2013</p>
-        <p class="post-excerpt">I've never regretted being loving, but there are plenty of times I've regretted being right.</p>
-      </li>
-      <li>
-        <h2 class="post-title"><a href="/posts/singles-awareness-day.html">Singles Awareness Day</a></h2>
-        <p class="post-meta">February 21, 2011</p>
-        <p class="post-excerpt">A lesson on gratitude from hardboiled eggs.</p>
-      </li>
-      <li>
-        <h2 class="post-title"><a href="/posts/meet-in-the-middle.html">Meet in the Middle</a></h2>
-        <p class="post-meta">March 5, 2010</p>
-        <p class="post-excerpt">A solution for dealing with one-sided relationships.</p>
-      </li>
-      <li>
-        <h2 class="post-title"><a href="/posts/what-im-thankful-for.html">What I'm Thankful for</a></h2>
-        <p class="post-meta">November 27, 2008</p>
-        <p class="post-excerpt">A tribute to my parents.</p>
-      </li>
-    </ul>
-  </main>
-
-  <script>
-    const toggle = document.querySelector('.theme-toggle');
-    function updateToggleIcon() {
-      const theme = document.documentElement.getAttribute('data-theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const isDark = theme === 'dark' || (theme !== 'light' && prefersDark);
-      toggle.innerHTML = isDark ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>' : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-    }
-    updateToggleIcon();
-    toggle.addEventListener('click', function() {
-      const root = document.documentElement;
-      const current = root.getAttribute('data-theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const isDark = current === 'dark' || (current !== 'light' && prefersDark);
-      const newTheme = isDark ? 'light' : 'dark';
-      root.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      updateToggleIcon();
-    });
-  </script>
-</body>
-</html>
+---
+layout: page
+title: Essays
+---
+<ul class="post-list">
+  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+  {% for post in sorted_posts %}
+  <li>
+    <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+    <p class="post-excerpt">{{ post.description }}</p>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,96 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Ian Bennett Alas</title>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-15H4ETT4F4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-15H4ETT4F4');
-  </script>
-</head>
-<body>
-  <script>
-    (function() {
-      const saved = localStorage.getItem('theme');
-      if (saved) {
-        document.documentElement.setAttribute('data-theme', saved);
-      }
-    })();
-  </script>
-  <header>
-    <h1 class="site-title"><a href="/">@ianbennettalas</a></h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/essays.html">Essays</a>
-      <button class="theme-toggle" aria-label="Toggle theme"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
-    </nav>
-  </header>
+---
+layout: page
+title: About
+---
+<article>
+  <h1>About</h1>
 
-  <main>
-    <article>
-      <h1>About</h1>
+  <p>Based in California, I manage special projects for Reid Hoffman.</p>
 
-      <p>Based in California, I manage special projects for Reid Hoffman.</p>
+  <h2>Values</h2>
+  <ul>
+    <li>Respect</li>
+    <li>Clarity</li>
+    <li>Differentiation</li>
+  </ul>
 
-      <h2>Values</h2>
+  <h2>Enthusiasms</h2>
+  <ul>
+    <li>Games</li>
+    <li>Philosophy</li>
+    <li>Design</li>
+  </ul>
+
+  <h2>Stomping grounds</h2>
+  <ul>
+    <li><a href="https://www.instagram.com/ianbennettalas/" target="_blank" rel="noopener">Instagram</a></li>
+    <li><a href="https://twitter.com/ianbennettalas" target="_blank" rel="noopener">Threads</a></li>
+    <li><a href="https://www.linkedin.com/in/ianbennettalas/" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://x.com/ianbennettalas" target="_blank" rel="noopener">X</a></li>
+    <li><a href="https://www.facebook.com/ianbennettalas" target="_blank" rel="noopener">Facebook Messenger</a> / Signal for chat</li>
+    <li>Inactive
       <ul>
-        <li>Respect</li>
-        <li>Clarity</li>
-        <li>Differentiation</li>
+        <li><a href="https://obviousmusic.tumblr.com" target="_blank" rel="noopener">Tumblr</a></li>
+        <li><a href="https://vimeo.com/ianbennettalas" target="_blank" rel="noopener">Vimeo</a> / <a href="https://www.youtube.com/c/IanBennettAlas" target="_blank" rel="noopener">YouTube</a></li>
       </ul>
-
-      <h2>Enthusiasms</h2>
-      <ul>
-        <li>Games</li>
-        <li>Philosophy</li>
-        <li>Design</li>
-      </ul>
-
-      <h2>Stomping grounds</h2>
-      <ul>
-        <li><a href="https://www.instagram.com/ianbennettalas/" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://twitter.com/ianbennettalas" target="_blank" rel="noopener">Threads</a></li>
-        <li><a href="https://www.linkedin.com/in/ianbennettalas/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://x.com/ianbennettalas" target="_blank" rel="noopener">X</a></li>
-        <li><a href="https://www.facebook.com/ianbennettalas" target="_blank" rel="noopener">Facebook Messenger</a> / Signal for chat</li>
-        <li>Inactive
-          <ul>
-            <li><a href="https://obviousmusic.tumblr.com" target="_blank" rel="noopener">Tumblr</a></li>
-            <li><a href="https://vimeo.com/ianbennettalas" target="_blank" rel="noopener">Vimeo</a> / <a href="https://www.youtube.com/c/IanBennettAlas" target="_blank" rel="noopener">YouTube</a></li>
-          </ul>
-        </li>
-      </ul>
-
-    </article>
-  </main>
-
-  <script>
-    const toggle = document.querySelector('.theme-toggle');
-    function updateToggleIcon() {
-      const theme = document.documentElement.getAttribute('data-theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const isDark = theme === 'dark' || (theme !== 'light' && prefersDark);
-      toggle.innerHTML = isDark ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>' : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-    }
-    updateToggleIcon();
-    toggle.addEventListener('click', function() {
-      const root = document.documentElement;
-      const current = root.getAttribute('data-theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const isDark = current === 'dark' || (current !== 'light' && prefersDark);
-      const newTheme = isDark ? 'light' : 'dark';
-      root.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      updateToggleIcon();
-    });
-  </script>
-</body>
-</html>
+    </li>
+  </ul>
+</article>
