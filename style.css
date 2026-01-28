@@ -1,14 +1,8 @@
 :root {
-  color-scheme: light only;
-  -webkit-color-scheme: light only;
   --bg-color: #fff;
   --text-color: #222;
   --text-secondary: #666;
   --border-color: #e5e5e5;
-}
-
-html {
-  -webkit-text-fill-color: initial;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -110,31 +104,6 @@ nav a {
 .theme-toggle svg {
   width: 20px;
   height: 20px;
-  color: transparent !important;
-}
-
-/* === iOS Safari SVG stroke fix === */
-.theme-toggle svg,
-.theme-toggle svg circle,
-.theme-toggle svg line,
-.theme-toggle svg path {
-  stroke: #e8e4dc !important;
-}
-
-[data-theme="light"] .theme-toggle svg,
-[data-theme="light"] .theme-toggle svg circle,
-[data-theme="light"] .theme-toggle svg line,
-[data-theme="light"] .theme-toggle svg path {
-  stroke: #222 !important;
-}
-
-@media (prefers-color-scheme: light) {
-  html:not([data-theme="dark"]) .theme-toggle svg,
-  html:not([data-theme="dark"]) .theme-toggle svg circle,
-  html:not([data-theme="dark"]) .theme-toggle svg line,
-  html:not([data-theme="dark"]) .theme-toggle svg path {
-    stroke: #222 !important;
-  }
 }
 
 /* Main content */
