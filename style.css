@@ -107,32 +107,26 @@ nav a {
   color: transparent !important;
 }
 
-.theme-toggle svg * {
-  stroke: inherit;
-}
-
-/* Force stroke colors for each theme state */
-[data-theme="dark"] .theme-toggle svg,
-[data-theme="dark"] .theme-toggle svg * {
+/* === iOS Safari SVG stroke fix === */
+.theme-toggle svg,
+.theme-toggle svg circle,
+.theme-toggle svg line,
+.theme-toggle svg path {
   stroke: #e8e4dc !important;
 }
 
 [data-theme="light"] .theme-toggle svg,
-[data-theme="light"] .theme-toggle svg * {
+[data-theme="light"] .theme-toggle svg circle,
+[data-theme="light"] .theme-toggle svg line,
+[data-theme="light"] .theme-toggle svg path {
   stroke: #222 !important;
-}
-
-/* Handle system preference when no data-theme is set */
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) .theme-toggle svg,
-  html:not([data-theme="light"]) .theme-toggle svg * {
-    stroke: #e8e4dc !important;
-  }
 }
 
 @media (prefers-color-scheme: light) {
   html:not([data-theme="dark"]) .theme-toggle svg,
-  html:not([data-theme="dark"]) .theme-toggle svg * {
+  html:not([data-theme="dark"]) .theme-toggle svg circle,
+  html:not([data-theme="dark"]) .theme-toggle svg line,
+  html:not([data-theme="dark"]) .theme-toggle svg path {
     stroke: #222 !important;
   }
 }
