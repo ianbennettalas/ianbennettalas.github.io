@@ -104,6 +104,37 @@ nav a {
 .theme-toggle svg {
   width: 20px;
   height: 20px;
+  color: transparent !important;
+}
+
+.theme-toggle svg * {
+  stroke: inherit;
+}
+
+/* Force stroke colors for each theme state */
+[data-theme="dark"] .theme-toggle svg,
+[data-theme="dark"] .theme-toggle svg * {
+  stroke: #e8e4dc !important;
+}
+
+[data-theme="light"] .theme-toggle svg,
+[data-theme="light"] .theme-toggle svg * {
+  stroke: #222 !important;
+}
+
+/* Handle system preference when no data-theme is set */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .theme-toggle svg,
+  html:not([data-theme="light"]) .theme-toggle svg * {
+    stroke: #e8e4dc !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-theme="dark"]) .theme-toggle svg,
+  html:not([data-theme="dark"]) .theme-toggle svg * {
+    stroke: #222 !important;
+  }
 }
 
 /* Main content */
