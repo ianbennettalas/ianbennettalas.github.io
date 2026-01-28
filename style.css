@@ -90,22 +90,20 @@ nav a {
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--text-color);
   padding: 0;
-  width: 24px;
-  height: 24px;
+  min-width: 44px;
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .theme-toggle svg {
-  width: 18px;
-  height: 18px;
-}
-
-.theme-toggle:hover {
-  color: var(--text-secondary);
+  width: 20px;
+  height: 20px;
 }
 
 /* Main content */
