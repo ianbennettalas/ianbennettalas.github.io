@@ -1,7 +1,16 @@
 title: Ian Bennett Alas
-description: Personal website of Ian Bennett Alas
-url: https://ianbennettalas.github.io
+description: "Personal blog by Ian Bennett Alas — essays on relationships, philosophy, and life."
+url: https://ianbennettalas.com
 baseurl: ""
+
+# Author info (used in structured data & meta tags)
+author:
+  name: Ian Bennett Alas
+  url: https://ianbennettalas.com
+  social:
+    linkedin: https://www.linkedin.com/in/ianbennettalas/
+    instagram: https://www.instagram.com/ianbennettalas/
+    x: https://x.com/ianbennettalas
 
 # Build settings
 markdown: kramdown
@@ -9,6 +18,10 @@ permalink: /posts/:title.html
 
 # Analytics
 google_analytics: G-15H4ETT4F4
+
+# Plugins
+plugins:
+  - jekyll-sitemap
 
 # Exclude from build
 exclude:

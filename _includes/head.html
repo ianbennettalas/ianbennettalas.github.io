@@ -1,8 +1,90 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+
+<!-- Title -->
+<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} — Essays & Personal Blog{% endif %}</title>
+
+<!-- Meta Description -->
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+{% if page.image %}<meta property="og:image" content="{{ site.url }}{{ page.image }}">{% else %}<meta property="og:image" content="{{ site.url }}/images/profile.jpg">{% endif %}
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+{% if page.image %}<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">{% else %}<meta name="twitter:image" content="{{ site.url }}/images/profile.jpg">{% endif %}
+
+<!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Stylesheet -->
 <link rel="stylesheet" href="/style.css">
+
+<!-- Structured Data: Person + WebSite (homepage only) -->
+{% if page.url == "/" or page.url == "/index.html" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}",
+      "description": "{{ site.description }}"
+    },
+    {
+      "@type": "Person",
+      "name": "{{ site.author.name }}",
+      "url": "{{ site.author.url }}",
+      "sameAs": [
+        "{{ site.author.social.linkedin }}",
+        "{{ site.author.social.instagram }}",
+        "{{ site.author.social.x }}"
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}
+
+<!-- Structured Data: BlogPosting (posts only) -->
+{% if page.layout == "post" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ page.description | escape }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.author.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  }{% if page.image %},
+  "image": "{{ site.url }}{{ page.image }}"{% endif %}
+}
+</script>
+{% endif %}
+
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 <script>
