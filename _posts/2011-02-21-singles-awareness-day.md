@@ -4,6 +4,11 @@ title: "Singles Awareness Day"
 date: 2011-02-21
 description: "A lesson on gratitude from hardboiled eggs."
 image: /images/singles-awareness-day.jpg
+redirect_from:
+  - /singles-awareness-day/
+  - /singles-awareness-day/feed/
+  - /2011/02/21/singles-awareness-day/
+  - /2011/02/singles-awareness-day/
 ---
 
 <p class="has-drop-cap">When I visited Seattle for the first time, I stayed with a friend of a friend named Jesse. It was kind of him to take in a stranger on such short notice, without knowing things like whether I shower ever. I'd decided to go to Seattle only a few days before and had no idea where I was going to stay. I half-seriously considered sleeping on park benches, thinking it would make a good story one day. I'm glad I didn't do that because it rained.</p>

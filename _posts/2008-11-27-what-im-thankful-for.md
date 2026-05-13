@@ -5,6 +5,11 @@ date: 2008-11-27
 description: "A tribute to my parents."
 image: /images/what-im-thankful-for.png
 pinned: 2
+redirect_from:
+  - /what-im-thankful-for/
+  - /what-im-thankful-for/feed/
+  - /2008/11/27/what-im-thankful-for/
+  - /2008/11/what-im-thankful-for/
 ---
 
 ## My dad

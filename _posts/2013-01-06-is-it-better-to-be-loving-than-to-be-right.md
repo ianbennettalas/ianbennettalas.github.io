@@ -4,6 +4,11 @@ title: "Is It Better to Be Loving Than to Be Right?"
 date: 2013-01-06
 description: "I've never regretted being loving, but there are plenty of times I've regretted being right."
 image: /images/is-it-better-to-be-loving.jpg
+redirect_from:
+  - /is-it-better-to-be-loving-than-to-be-right/
+  - /is-it-better-to-be-loving-than-to-be-right/feed/
+  - /2013/01/06/is-it-better-to-be-loving-than-to-be-right/
+  - /2013/01/is-it-better-to-be-loving-than-to-be-right/
 ---
 
 Jeff Weiner, CEO of LinkedIn, in a [New York Times interview](http://www.nytimes.com/2012/11/11/business/jeff-weiner-of-linkedin-on-the-next-play-philosophy.html?pagewanted=all):

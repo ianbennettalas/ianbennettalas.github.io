@@ -22,6 +22,8 @@ google_analytics: G-15H4ETT4F4
 # Plugins
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
 
 # Exclude from build
 exclude:

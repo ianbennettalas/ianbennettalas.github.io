@@ -4,6 +4,11 @@ title: "In A Perfect Universe, You Wouldn't Exist"
 date: 2013-09-06
 description: "A reflection on physics, symmetry, and unfathomable luck."
 image: /images/in-a-perfect-universe.jpg
+redirect_from:
+  - /in-a-perfect-universe-you-wouldnt-exist/
+  - /in-a-perfect-universe-you-wouldnt-exist/feed/
+  - /2013/09/06/in-a-perfect-universe-you-wouldnt-exist/
+  - /2013/09/in-a-perfect-universe-you-wouldnt-exist/
 ---
 
 The Nobel laureate Philip Warren Anderson once said, "It is only slightly overstating the case to say that physics is the study of symmetry." Because physics is the study of the behavior of the universe, Anderson's statement implies that the universe is, to some degree, symmetrical.
